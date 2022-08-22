@@ -1,0 +1,58 @@
+.recovery{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,.6), rgba(12, 9, 9, 0.5)), url(../../assets/recovery-bg.png) no-repeat center center/cover;
+}
+
+.recovery .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.recovery .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+    padding: 1rem;
+    margin-left: 6rem;
+    margin-top: 20%;
+}
+
+.recovery .content button{
+    margin-top: 20px;
+}
+
+.recovery h2{
+    color: white;
+}
+
+.recovery p{
+    color: white;
+}
+
+.recovery .blue{
+    color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 800px) {
+    .recovery .content{
+        left: 0;
+        margin: 20% 0;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .recovery .content p{
+        color: white;
+        font-weight: 500;
+    }
+    
+    .recovery .container{
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+}

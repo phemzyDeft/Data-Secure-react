@@ -1,0 +1,43 @@
+.data{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .2);
+}
+
+.data::before{
+    background: url(../../assets/data-bg.png) no-repeat center center/cover;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.data .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    margin: 20% 10%;
+    width: 30%;
+}
+
+.data .content button{
+    margin-top: .6rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    .data .content{
+        left: 0;
+        margin: 40% 0;
+        width: 100%;
+        background: rgba(255, 255, 255, .4);
+        padding: 2rem;
+    }
+
+    .data .content p{
+        color: #000000;
+    }
+}

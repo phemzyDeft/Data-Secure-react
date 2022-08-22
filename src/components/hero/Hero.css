@@ -1,0 +1,44 @@
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: url(../../assets/cyber-bg.png) no-repeat center center/cover;
+}
+
+.hero .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.hero .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+    padding: 1rem;
+    margin-left: 6rem;
+}
+
+.hero .content button{
+    margin-top: 20px;
+}
+
+.hero h1{
+    color: white;
+}
+
+.hero .blue{
+    color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 800px) {
+    .hero .content{
+        margin-left: 1rem;
+        padding-top: 6.5rem;
+    }
+
+    .hero h1{
+        font-size: 2.6rem;
+    }
+}
